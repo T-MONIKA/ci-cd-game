@@ -2,7 +2,7 @@ provider "aws" {
   region = "ap-south-1"
 }
 
-resource "aws_instance" "game_server" {
+resource "aws_instance" "monigame" {
   ami           = "ami-073130f74f5ffb161" 
   instance_type = "t3.small"
   key_name      = "M"
@@ -18,7 +18,7 @@ resource "aws_instance" "game_server" {
               EOF
 
   tags = {
-    Name = "Game-Server"
+    Name = "monigame"
   }
 }
 
