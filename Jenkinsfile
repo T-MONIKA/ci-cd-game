@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        KEY_PATH = "/var/lib/jenkins/jenkinskkp.pem"
+        KEY_PATH = "/var/lib/jenkins/monz.pem"
     }
 
     stages {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/satheeshm5465-aws/ci-cd-game'
+                git branch: 'main', url: 'https://github.com/T-MONIKA/ci-cd-game'
             }
         }
 
