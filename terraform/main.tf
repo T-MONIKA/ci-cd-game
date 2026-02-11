@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "game_server" {
-  ami           = "ami-0c83cb1c664994bbd" 
+  ami           = "ami-073130f74f5ffb161" 
   instance_type = "t3.small"
   key_name      = "monz"
 
